@@ -1,0 +1,23 @@
+{
+  "name": "plsft-com",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "deploy": "npm run build && wrangler pages deploy dist"
+  },
+  "dependencies": {
+    "@astrojs/alpinejs": "^0.4.0",
+    "@astrojs/cloudflare": "^12.0.0",
+    "@tailwindcss/vite": "^4.2.2",
+    "alpinejs": "^3.14.0",
+    "astro": "^5.0.0",
+    "tailwindcss": "^4.2.2"
+  },
+  "devDependencies": {
+    "@types/alpinejs": "^3.13.0",
+    "wrangler": "^4.0.0"
+  }
+}

@@ -1,0 +1,127 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Ship Products | George Rios" description="Build and launch your product fast with full-stack development on Cloudflare edge, Levi framework, and Tanstack.">
+  <nav
+    x-data="{ scrolled: false, mobileOpen: false }"
+    x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 20 })"
+    :class="{ 'bg-[#0a0a0a]/95 backdrop-blur-sm border-b border-[#27272a]': scrolled }"
+    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+  >
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="font-mono text-[#e4e4e7] font-semibold tracking-tight">
+        <span class="text-[#22c55e]">~</span>$ plsft/george
+      </a>
+
+      <div class="hidden md:flex items-center gap-8">
+        <a href="/#services" class="nav-link">Services</a>
+        <a href="/#stack" class="nav-link">Stack</a>
+        <a href="/#about" class="nav-link">About</a>
+        <a href="https://cal.com/plurral/30m" target="_blank" rel="noopener noreferrer" class="btn-primary text-xs py-2 px-4">Book a Call</a>
+      </div>
+
+      <button @click="mobileOpen = !mobileOpen" class="md:hidden text-[#e4e4e7] hover:text-[#22c55e] transition-colors">
+        <svg x-show="!mobileOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg x-show="mobileOpen" x-cloak class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <div x-show="mobileOpen" x-cloak class="md:hidden bg-[#0a0a0a] border-t border-[#27272a]">
+      <div class="px-6 py-4 flex flex-col gap-4">
+        <a href="/#services" @click="mobileOpen = false" class="nav-link">Services</a>
+        <a href="/#stack" @click="mobileOpen = false" class="nav-link">Stack</a>
+        <a href="/#about" @click="mobileOpen = false" class="nav-link">About</a>
+        <a href="https://cal.com/plurral/30m" target="_blank" rel="noopener noreferrer" class="btn-primary text-center">Book a Call</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="scanlines pt-24">
+    <section class="py-16 px-6">
+      <div class="max-w-4xl mx-auto">
+        <div class="terminal-window">
+          <div class="terminal-titlebar">
+            <div class="terminal-dot terminal-dot-red"></div>
+            <div class="terminal-dot terminal-dot-yellow"></div>
+            <div class="terminal-dot terminal-dot-green"></div>
+            <span class="ml-4 text-[#71717a] text-xs font-mono">ship_product.md</span>
+          </div>
+          <div class="terminal-content space-y-8">
+            <div>
+              <span class="text-[#22c55e] font-mono text-sm">// service</span>
+              <h1 class="text-4xl md:text-5xl font-bold text-[#e4e4e7] mt-4">
+                <span class="text-[#22c55e]">></span> ship_product
+              </h1>
+            </div>
+
+            <div class="border-t border-[#27272a] pt-8 space-y-6">
+              <p class="text-xl text-[#e4e4e7] leading-relaxed">
+                Building software that actually ships is hard. Building software that scales on the edge is even harder. That's where I come in.
+              </p>
+              <p class="text-lg text-[#71717a] leading-relaxed">
+                I don't just advise — I build with you. Using Levi (my Cloudflare Workers framework), Tanstack, and 25 years of enterprise architecture experience, I help you go from idea to production, fast.
+              </p>
+              <p class="text-lg text-[#71717a] leading-relaxed">
+                Every project is different, but the goal is always the same: ship working software, not documentation. Whether it's a new product, a migration to Cloudflare, or adding AI capabilities to your existing stack, I help you move fast without breaking things.
+              </p>
+
+              <div class="grid md:grid-cols-2 gap-6 pt-4">
+                <div class="terminal-window">
+                  <div class="terminal-titlebar">
+                    <div class="terminal-dot terminal-dot-red"></div>
+                    <div class="terminal-dot terminal-dot-yellow"></div>
+                    <div class="terminal-dot terminal-dot-green"></div>
+                    <span class="ml-4 text-[#71717a] text-xs font-mono">what_you_get.sh</span>
+                  </div>
+                  <div class="terminal-content">
+                    <ul class="space-y-3 text-[#71717a]">
+                      <li class="flex items-start gap-3"><span class="text-[#22c55e]">✓</span><span>Direct access to 25 years of enterprise architecture experience</span></li>
+                      <li class="flex items-start gap-3"><span class="text-[#22c55e]">✓</span><span>Ship faster with proven frameworks (Levi, Tanstack)</span></li>
+                      <li class="flex items-start gap-3"><span class="text-[#22c55e]">✓</span><span>Cloudflare-native architecture from day one</span></li>
+                      <li class="flex items-start gap-3"><span class="text-[#22c55e]">✓</span><span>No more deferred technical decisions</span></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="terminal-window">
+                  <div class="terminal-titlebar">
+                    <div class="terminal-dot terminal-dot-red"></div>
+                    <div class="terminal-dot terminal-dot-yellow"></div>
+                    <div class="terminal-dot terminal-dot-green"></div>
+                    <span class="ml-4 text-[#71717a] text-xs font-mono">stack.md</span>
+                  </div>
+                  <div class="terminal-content">
+                    <div class="flex flex-wrap gap-2">
+                      <span class="tech-badge">Levi</span>
+                      <span class="tech-badge">Tanstack</span>
+                      <span class="tech-badge">Cloudflare Workers</span>
+                      <span class="tech-badge">D1</span>
+                      <span class="tech-badge">R2</span>
+                      <span class="tech-badge">TypeScript</span>
+                      <span class="tech-badge">dotnet</span>
+                      <span class="tech-badge">Tauri</span>
+                      <span class="tech-badge">React</span>
+                      <span class="tech-badge">Expo</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="border-t border-[#27272a] pt-8 flex flex-col sm:flex-row gap-4">
+                <a href="https://cal.com/plurral/30m" target="_blank" rel="noopener noreferrer" class="btn-primary text-center">[ Book a Call ]</a>
+                <a href="/" class="btn-primary bg-transparent border border-[#27272a] hover:border-[#22c55e] hover:bg-transparent text-center">[ ← Back to Home ]</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <style is:global>[x-cloak] { display: none !important; }</style>
+</Layout>
