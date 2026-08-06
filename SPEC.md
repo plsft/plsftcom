@@ -223,7 +223,7 @@ Tanstack workshops, Levi framework deep-dives, Cloudflare bootcamps. Your team s
 
 ## Levi's Site - Design Inspiration
 
-Levi (levi.flarefound.com) is a framework for Cloudflare. George is the founder. The terminal site should subtly reference Flarefound and Levi but the focus is George's personal brand.
+Levi (levi.plsft.com) is a framework for Cloudflare. George is the founder. The terminal site should subtly reference Flarefound and Levi but the focus is George's personal brand.
 
 ---
 
